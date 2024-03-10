@@ -2,8 +2,11 @@ import os
 import osmnx as ox
 from datetime import datetime
 
+location = "Boituva, Brazil"
 # AQUI VOCÊ ESCOLHE A QUALIDADE/RESOLUÇÃO DO MAPA
 dpi_out = 1200
+
+format = "png"
 
 # AQUI VOCÊ PODE MUDAR A COR DA VIA DE ACORDO COM SEU COMPRIMENTO (em metros)(ver função get_road_color)
 road_colors = {
@@ -42,10 +45,10 @@ def get_road_color(length):
     else:
         return road_colors['default']
 
-
+# VOCÊ PODE ESCOLHER SE QUER A PARTIR DE UMA COORDENADA OU DE UMA LOCALIDADE
 point = (-23.268706, -47.297528)
 # G = ox.graph_from_point(point, dist=5000, retain_all=True, simplify=True, network_type='all')
-G = ox.graph_from_place('Itu, Brazil')
+G = ox.graph_from_place(location)
 
 
 roadColors = []
@@ -73,8 +76,8 @@ current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
 
 # SALVA O ARQUIVO NA PASTA IMGS (se a pasta não existir, cria - importante dizer que a pasta está no gitignore,)
 # portanto as imagens não estão sendo salvas no Git. Se quiser que sejam, tire-as do gitignore.
-folder_name = "imgs"
+folder_name = "imgs_roads"
 if not os.path.exists(folder_name):
     os.makedirs(folder_name)
-file_path = os.path.join(folder_name, f"roadMap_{current_time}.pdf")
-fig.savefig(file_path, dpi=dpi_out, bbox_inches='tight', format="pdf", facecolor=fig.get_facecolor(), transparent=False)
+file_path = os.path.join(folder_name, f"roadMap_{current_time}.{format}")
+fig.savefig(file_path, dpi=400, bbox_inches='tight', format=format, facecolor=fig.get_facecolor(), transparent=False)
