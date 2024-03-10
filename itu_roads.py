@@ -2,6 +2,9 @@ import os
 import osmnx as ox
 from datetime import datetime
 
+# AQUI VOCÊ ESCOLHE A QUALIDADE/RESOLUÇÃO DO MAPA
+dpi_out = 1200
+
 # AQUI VOCÊ PODE MUDAR A COR DA VIA DE ACORDO COM SEU COMPRIMENTO (em metros)(ver função get_road_color)
 road_colors = {
     'short': '#000000',
@@ -41,7 +44,8 @@ def get_road_color(length):
 
 
 point = (-23.268706, -47.297528)
-G = ox.graph_from_point(point, dist=5000, retain_all=True, simplify=True, network_type='all')
+# G = ox.graph_from_point(point, dist=5000, retain_all=True, simplify=True, network_type='all')
+G = ox.graph_from_place('Itu, Brazil')
 
 
 roadColors = []
@@ -72,5 +76,5 @@ current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
 folder_name = "imgs"
 if not os.path.exists(folder_name):
     os.makedirs(folder_name)
-file_path = os.path.join(folder_name, f"roadMap_{current_time}.png")
-fig.savefig(file_path, dpi=300, bbox_inches='tight', format="png", facecolor=fig.get_facecolor(), transparent=False)
+file_path = os.path.join(folder_name, f"roadMap_{current_time}.pdf")
+fig.savefig(file_path, dpi=dpi_out, bbox_inches='tight', format="pdf", facecolor=fig.get_facecolor(), transparent=False)
