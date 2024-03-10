@@ -1,4 +1,5 @@
 from PIL import Image
+
 ## CRIADO PELO CHATGPT
 
 # Abre as duas imagens

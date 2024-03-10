@@ -4,10 +4,11 @@ import osmnx as ox
 from datetime import datetime
 
 format = "png"
-# Get data for places
 
+dpi_out = 1200
 
 location = ["Boituva, Brazil"]
+
 G1 = ox.graph_from_place(location, retain_all=True, simplify = False, custom_filter='["natural"~"water"]')
 G2 = ox.graph_from_place(location, retain_all=True, simplify = False,custom_filter='["waterway"~"river"]')
 Gwater = nx.compose(G1, G2)
@@ -49,8 +50,8 @@ for item in data:
 
 
 fig, ax = ox.plot_graph(Gwater, node_size=0,figsize=(27, 40), 
-                        dpi = 400, save = False, edge_color=roadColors,
-                        edge_linewidth=roadWidths, edge_alpha=1)
+                        dpi = dpi_out, save = False, edge_color=roadColors,
+                        edge_linewidth=roadWidths, edge_alpha=1, show=False)
 
 fig.tight_layout(pad=0)
 
@@ -62,7 +63,8 @@ current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
 folder_name = "imgs_waters"
 if not os.path.exists(folder_name):
     os.makedirs(folder_name)
-file_path = os.path.join(folder_name, f"roadMap_{current_time}.{format}")
+file_path = os.path.join(folder_name, f"waters_{current_time}.{format}")
 
-fig.savefig(file_path, dpi=400, bbox_inches='tight', format="png", 
+fig.savefig(file_path, dpi=dpi_out, bbox_inches='tight', format="png", 
             facecolor=fig.get_facecolor(), transparent=True)
+print(f"waters_{current_time} was created.")

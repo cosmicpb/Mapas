@@ -67,7 +67,7 @@ for uu, vv, kkey, ddata in G.edges(keys=True, data=True):
 # PLOTA O MAPA
 fig, ax = ox.plot_graph(G, node_size=0, figsize=(27, 40), dpi=300,
                         bgcolor=bgcolor, save=False,
-                        edge_color=roadColors, edge_linewidth=roadWidths, edge_alpha=1)
+                        edge_color=roadColors, edge_linewidth=roadWidths, edge_alpha=1, show=False)
 
 fig.tight_layout(pad=0)
 
@@ -81,3 +81,4 @@ if not os.path.exists(folder_name):
     os.makedirs(folder_name)
 file_path = os.path.join(folder_name, f"roadMap_{current_time}.{format}")
 fig.savefig(file_path, dpi=400, bbox_inches='tight', format=format, facecolor=fig.get_facecolor(), transparent=False)
+print(f"roadMap_{current_time} was created.")
