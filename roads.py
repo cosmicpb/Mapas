@@ -4,7 +4,7 @@ from datetime import datetime
 
 location = "Boituva, Brazil"
 # AQUI VOCÊ ESCOLHE A QUALIDADE/RESOLUÇÃO DO MAPA
-dpi_out = 1200
+dpi_out = 400
 
 format = "png"
 
@@ -80,5 +80,5 @@ folder_name = "imgs_roads"
 if not os.path.exists(folder_name):
     os.makedirs(folder_name)
 file_path = os.path.join(folder_name, f"roadMap_{current_time}.{format}")
-fig.savefig(file_path, dpi=400, bbox_inches='tight', format=format, facecolor=fig.get_facecolor(), transparent=False)
+fig.savefig(file_path, dpi=dpi_out, bbox_inches='tight', format=format, facecolor=fig.get_facecolor(), transparent=False)
 print(f"roadMap_{current_time} was created.")

@@ -5,7 +5,7 @@ from datetime import datetime
 
 format = "png"
 
-dpi_out = 1200
+dpi_out = 400
 
 location = ["Boituva, Brazil"]
 
