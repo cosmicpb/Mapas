@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f61062b932fe3ddab156adca365ff47c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f61062b932fe3ddab156adca365ff47c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f61062b932fe3ddab156adca365ff47c = L.map(
+                "map_f61062b932fe3ddab156adca365ff47c",
+                {
+                    center: [-23.264, -47.299],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_85a2e3eabdd52d4afcfdec8fac12b051 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_85a2e3eabdd52d4afcfdec8fac12b051.addTo(map_f61062b932fe3ddab156adca365ff47c);
+        
+    
+            var marker_a5ab80151d467dd17fd7dea4875011f3 = L.marker(
+                [-23.2727503, -47.2920541],
+                {}
+            ).addTo(map_f61062b932fe3ddab156adca365ff47c);
+        
+    
+            var icon_2870b20220f5b31303bb63a8a601106f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a5ab80151d467dd17fd7dea4875011f3.setIcon(icon_2870b20220f5b31303bb63a8a601106f);
+        
+    
+        var popup_abe364a62f33930fed5dd3e38b56862f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37ab18d2c8a4329c17565fada3a4598e = $(`<div id="html_37ab18d2c8a4329c17565fada3a4598e" style="width: 100.0%; height: 100.0%;">Hospital Municipal Convenção 550, Vila Nova, CEP - 13309-000</div>`)[0];
+                popup_abe364a62f33930fed5dd3e38b56862f.setContent(html_37ab18d2c8a4329c17565fada3a4598e);
+            
+        
+
+        marker_a5ab80151d467dd17fd7dea4875011f3.bindPopup(popup_abe364a62f33930fed5dd3e38b56862f)
+        ;
+
+        
+    
+    
+            var marker_0b787a46bf4dd65537be2b8f3a9a5a27 = L.marker(
+                [-23.2703353, -47.2978269],
+                {}
+            ).addTo(map_f61062b932fe3ddab156adca365ff47c);
+        
+    
+            var icon_c5e88d5bfd50be0302ff397be0035d8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0b787a46bf4dd65537be2b8f3a9a5a27.setIcon(icon_c5e88d5bfd50be0302ff397be0035d8d);
+        
+    
+        var popup_0e0c6555a192e81b1dde321c84d2f565 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa299973eb3b57c3e26833271288cc01 = $(`<div id="html_aa299973eb3b57c3e26833271288cc01" style="width: 100.0%; height: 100.0%;">Hospital da Criança Rua Joaquim Bernardes Borges, 372, Centro</div>`)[0];
+                popup_0e0c6555a192e81b1dde321c84d2f565.setContent(html_aa299973eb3b57c3e26833271288cc01);
+            
+        
+
+        marker_0b787a46bf4dd65537be2b8f3a9a5a27.bindPopup(popup_0e0c6555a192e81b1dde321c84d2f565)
+        ;
+
+        
+    
+    
+            var marker_ce8b46fb49bd93de6b5dd5d6555ca0c0 = L.marker(
+                [-23.2562686, -47.3152772],
+                {}
+            ).addTo(map_f61062b932fe3ddab156adca365ff47c);
+        
+    
+            var icon_5a22c5688846b65ad1cc87b867aec2fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ce8b46fb49bd93de6b5dd5d6555ca0c0.setIcon(icon_5a22c5688846b65ad1cc87b867aec2fb);
+        
+    
+        var popup_0e25fdd4ccf7449ad2f07aa4c73ebdcb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e3052131e197051bf36549cba04f66e = $(`<div id="html_6e3052131e197051bf36549cba04f66e" style="width: 100.0%; height: 100.0%;">UPA Avenida Nove de Julho, 691, Nossa Senhora Aparecida</div>`)[0];
+                popup_0e25fdd4ccf7449ad2f07aa4c73ebdcb.setContent(html_6e3052131e197051bf36549cba04f66e);
+            
+        
+
+        marker_ce8b46fb49bd93de6b5dd5d6555ca0c0.bindPopup(popup_0e25fdd4ccf7449ad2f07aa4c73ebdcb)
+        ;
+
+        
+    
+    
+            var marker_062cbe8c952cd1d7514530aa89380882 = L.marker(
+                [-23.3894356, -47.3477858],
+                {}
+            ).addTo(map_f61062b932fe3ddab156adca365ff47c);
+        
+    
+            var icon_6842c0062493da9b733ebcef45cc3b44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_062cbe8c952cd1d7514530aa89380882.setIcon(icon_6842c0062493da9b733ebcef45cc3b44);
+        
+    
+        var popup_516dbc2eb0d660c04a8d232e401c8e57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0c89300bc3832202152458784ded687 = $(`<div id="html_e0c89300bc3832202152458784ded687" style="width: 100.0%; height: 100.0%;">PAM “Mario Moraes Bourguignon” Rua Itagiba Vilassa, s/nº, Vila Martins</div>`)[0];
+                popup_516dbc2eb0d660c04a8d232e401c8e57.setContent(html_e0c89300bc3832202152458784ded687);
+            
+        
+
+        marker_062cbe8c952cd1d7514530aa89380882.bindPopup(popup_516dbc2eb0d660c04a8d232e401c8e57)
+        ;
+
+        
+    
+    
+            var marker_4254ca24a33983afb419a0db791d7696 = L.marker(
+                [-23.262809, -47.312068],
+                {}
+            ).addTo(map_f61062b932fe3ddab156adca365ff47c);
+        
+    
+            var icon_255b207f4a1715e9e34892141957e31e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4254ca24a33983afb419a0db791d7696.setIcon(icon_255b207f4a1715e9e34892141957e31e);
+        
+    
+        var popup_8cfdfabc7af09763636846d653932429 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05a1968c9d64eccb7878f25adcefad30 = $(`<div id="html_05a1968c9d64eccb7878f25adcefad30" style="width: 100.0%; height: 100.0%;">UBS 01 - Dr Carlos Vasconcelos Prado R. Nahor Leite Gomes, 300 - Jardim Convencao, Itu - SP, 13311-190</div>`)[0];
+                popup_8cfdfabc7af09763636846d653932429.setContent(html_05a1968c9d64eccb7878f25adcefad30);
+            
+        
+
+        marker_4254ca24a33983afb419a0db791d7696.bindPopup(popup_8cfdfabc7af09763636846d653932429)
+        ;
+
+        
+    
+    
+            var marker_7bdaf160df55298502624dbbcfca2aa1 = L.marker(
+                [-23.38852, -47.347519],
+                {}
+            ).addTo(map_f61062b932fe3ddab156adca365ff47c);
+        
+    
+            var icon_ef428ee12b073afd5d3573d0930a9a43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7bdaf160df55298502624dbbcfca2aa1.setIcon(icon_ef428ee12b073afd5d3573d0930a9a43);
+        
+    
+        var popup_1145f665221f9ce26112ec61fc20e0d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85237d1f25e0ed8b61f6cfffa6cd4775 = $(`<div id="html_85237d1f25e0ed8b61f6cfffa6cd4775" style="width: 100.0%; height: 100.0%;">UBS 02 - José Maria Vicente R. Fiovo de Bernandin, 35 - Conj. Hab. Uniao, Itu - SP, 13308-183</div>`)[0];
+                popup_1145f665221f9ce26112ec61fc20e0d2.setContent(html_85237d1f25e0ed8b61f6cfffa6cd4775);
+            
+        
+
+        marker_7bdaf160df55298502624dbbcfca2aa1.bindPopup(popup_1145f665221f9ce26112ec61fc20e0d2)
+        ;
+
+        
+    
+    
+            var marker_41b9cf3c4807ee65e0fb50d1196905b5 = L.marker(
+                [23.285894, -47.274857],
+                {}
+            ).addTo(map_f61062b932fe3ddab156adca365ff47c);
+        
+    
+            var icon_7605948c91b832d3bcd1f9395c21a44a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_41b9cf3c4807ee65e0fb50d1196905b5.setIcon(icon_7605948c91b832d3bcd1f9395c21a44a);
+        
+    
+        var popup_402e559c8846ec25261209fb867bdde9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb5cd0520a5dc45db8de8a7daf8324cb = $(`<div id="html_eb5cd0520a5dc45db8de8a7daf8324cb" style="width: 100.0%; height: 100.0%;">UBS 03 - Maria Cecília Meneghini Av. Dr. Ulisses de Moraes, 236 - Nucleo Hab. Sao Judas Tadeu, Itu - SP, 13304-770</div>`)[0];
+                popup_402e559c8846ec25261209fb867bdde9.setContent(html_eb5cd0520a5dc45db8de8a7daf8324cb);
+            
+        
+
+        marker_41b9cf3c4807ee65e0fb50d1196905b5.bindPopup(popup_402e559c8846ec25261209fb867bdde9)
+        ;
+
+        
+    
+    
+            var marker_df6153ef6d6e924ffcd032331d6bcda9 = L.marker(
+                [-23.282073, -47.297964],
+                {}
+            ).addTo(map_f61062b932fe3ddab156adca365ff47c);
+        
+    
+            var icon_9fe3cd97851f24255add704aa08c2680 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_df6153ef6d6e924ffcd032331d6bcda9.setIcon(icon_9fe3cd97851f24255add704aa08c2680);
+        
+    
+        var popup_ddfcceb3d97ccf8bf5a5045bd8dbabba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1c55b2393d829040540a1b094326d8c = $(`<div id="html_a1c55b2393d829040540a1b094326d8c" style="width: 100.0%; height: 100.0%;">UBS 04 - Dr. Alcides Rodrigues R. Jasmim, 59 - Vila Roma, Itu - SP, 13310-481</div>`)[0];
+                popup_ddfcceb3d97ccf8bf5a5045bd8dbabba.setContent(html_a1c55b2393d829040540a1b094326d8c);
+            
+        
+
+        marker_df6153ef6d6e924ffcd032331d6bcda9.bindPopup(popup_ddfcceb3d97ccf8bf5a5045bd8dbabba)
+        ;
+
+        
+    
+    
+            var marker_6154ebaa95f04a33b2a57727dd50284c = L.marker(
+                [-23.284741, -47.290118],
+                {}
+            ).addTo(map_f61062b932fe3ddab156adca365ff47c);
+        
+    
+            var icon_4c6963da307b999bfbbdffb947a25493 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6154ebaa95f04a33b2a57727dd50284c.setIcon(icon_4c6963da307b999bfbbdffb947a25493);
+        
+    
+        var popup_3960c66958a0f82b9559591ecdc8bd7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4def99365fd3db8847861b507cd288c = $(`<div id="html_a4def99365fd3db8847861b507cd288c" style="width: 100.0%; height: 100.0%;">UBS 05 - Tristão Bauer Av. Francisco E. Favero, s/nº - Jardim do Estadio, Itu - SP, 13309-290</div>`)[0];
+                popup_3960c66958a0f82b9559591ecdc8bd7c.setContent(html_a4def99365fd3db8847861b507cd288c);
+            
+        
+
+        marker_6154ebaa95f04a33b2a57727dd50284c.bindPopup(popup_3960c66958a0f82b9559591ecdc8bd7c)
+        ;
+
+        
+    
+    
+            var marker_977132a35f09c8fcfe00c013ced85c9c = L.marker(
+                [-23.250922, -47.314804],
+                {}
+            ).addTo(map_f61062b932fe3ddab156adca365ff47c);
+        
+    
+            var icon_96113f10ab9a03ec2eb106aeda8008ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_977132a35f09c8fcfe00c013ced85c9c.setIcon(icon_96113f10ab9a03ec2eb106aeda8008ff);
+        
+    
+        var popup_4063427649154300f103c4d2081ef862 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_553c19544e0e7d72b5c26da978b61d57 = $(`<div id="html_553c19544e0e7d72b5c26da978b61d57" style="width: 100.0%; height: 100.0%;">UBS 06 - Agostinho Neto R. Monsenhor Ezequias Galvão, 485 - Vila Padre Bento, Itu - SP, 13313-113</div>`)[0];
+                popup_4063427649154300f103c4d2081ef862.setContent(html_553c19544e0e7d72b5c26da978b61d57);
+            
+        
+
+        marker_977132a35f09c8fcfe00c013ced85c9c.bindPopup(popup_4063427649154300f103c4d2081ef862)
+        ;
+
+        
+    
+    
+            var marker_b6242cebe96f3af1bb1fc0c2d46a2d7e = L.marker(
+                [-23.277526, -47.305348],
+                {}
+            ).addTo(map_f61062b932fe3ddab156adca365ff47c);
+        
+    
+            var icon_29c330faf6c5a6e39f9878593500b421 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b6242cebe96f3af1bb1fc0c2d46a2d7e.setIcon(icon_29c330faf6c5a6e39f9878593500b421);
+        
+    
+        var popup_a5002f36a19285691a3862ead725bdcb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43c9f49b34729d5ae85033f891cc9237 = $(`<div id="html_43c9f49b34729d5ae85033f891cc9237" style="width: 100.0%; height: 100.0%;">UBS 07 - Dr. Sebastião de Moraes R. e, 130 - Vila Sao Jose, Itu - SP, 13310-160</div>`)[0];
+                popup_a5002f36a19285691a3862ead725bdcb.setContent(html_43c9f49b34729d5ae85033f891cc9237);
+            
+        
+
+        marker_b6242cebe96f3af1bb1fc0c2d46a2d7e.bindPopup(popup_a5002f36a19285691a3862ead725bdcb)
+        ;
+
+        
+    
+    
+            var marker_b7783761f54bf4ab83e4f5f147e7a644 = L.marker(
+                [-23.267523, -47.295222],
+                {}
+            ).addTo(map_f61062b932fe3ddab156adca365ff47c);
+        
+    
+            var icon_923023b6bce2e335a517a3e6ceb55a2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b7783761f54bf4ab83e4f5f147e7a644.setIcon(icon_923023b6bce2e335a517a3e6ceb55a2d);
+        
+    
+        var popup_94119aeca271228bf929b487dbfd7240 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f40332548a7baf10b4d6e3c1641bc7f = $(`<div id="html_1f40332548a7baf10b4d6e3c1641bc7f" style="width: 100.0%; height: 100.0%;">UBS 08 - Dr. Cid Ferraz do Amaral Praça Conde de Parnaiba, 44 - Centro, Itu - SP, 13301-370</div>`)[0];
+                popup_94119aeca271228bf929b487dbfd7240.setContent(html_1f40332548a7baf10b4d6e3c1641bc7f);
+            
+        
+
+        marker_b7783761f54bf4ab83e4f5f147e7a644.bindPopup(popup_94119aeca271228bf929b487dbfd7240)
+        ;
+
+        
+    
+    
+            var marker_e56fc4c518a5a763152c1886315f1310 = L.marker(
+                [-23.268729, -47.281986],
+                {}
+            ).addTo(map_f61062b932fe3ddab156adca365ff47c);
+        
+    
+            var icon_54a6d222a3972d45ab0a3ce41f100318 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e56fc4c518a5a763152c1886315f1310.setIcon(icon_54a6d222a3972d45ab0a3ce41f100318);
+        
+    
+        var popup_5ef836dbb825b0eca355c4337c8e56fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5438f2f21967f31066717897d089e2b = $(`<div id="html_c5438f2f21967f31066717897d089e2b" style="width: 100.0%; height: 100.0%;">UBS 09 - Maria de Lourdes Pinheiro Passos R. Juvenal Emanoelli, S/N - São Luiz, Itu - SP, 13304-260</div>`)[0];
+                popup_5ef836dbb825b0eca355c4337c8e56fc.setContent(html_c5438f2f21967f31066717897d089e2b);
+            
+        
+
+        marker_e56fc4c518a5a763152c1886315f1310.bindPopup(popup_5ef836dbb825b0eca355c4337c8e56fc)
+        ;
+
+        
+    
+    
+            var marker_767f10caf397b9c652b87ba9f08aab50 = L.marker(
+                [-23.238547, -47.326053],
+                {}
+            ).addTo(map_f61062b932fe3ddab156adca365ff47c);
+        
+    
+            var icon_75ab7e2148c5fe105bb44181f190fab2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_767f10caf397b9c652b87ba9f08aab50.setIcon(icon_75ab7e2148c5fe105bb44181f190fab2);
+        
+    
+        var popup_d92c07712a9bbbf0dbd8b0886f1a74d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd1312f67bc2b0802ae00b8673fd6d99 = $(`<div id="html_dd1312f67bc2b0802ae00b8673fd6d99" style="width: 100.0%; height: 100.0%;">UBS 10 R. Ilydia Dias Furtado, 158 - Cantagalo, Itu - SP, 13328-300</div>`)[0];
+                popup_d92c07712a9bbbf0dbd8b0886f1a74d3.setContent(html_dd1312f67bc2b0802ae00b8673fd6d99);
+            
+        
+
+        marker_767f10caf397b9c652b87ba9f08aab50.bindPopup(popup_d92c07712a9bbbf0dbd8b0886f1a74d3)
+        ;
+
+        
+    
+    
+            var marker_89c7d2a5e9605e1f39016c4c6b97f912 = L.marker(
+                [-23.386084, -47.338174],
+                {}
+            ).addTo(map_f61062b932fe3ddab156adca365ff47c);
+        
+    
+            var icon_d215f73ba2881c950cecd74ebe3d4266 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_89c7d2a5e9605e1f39016c4c6b97f912.setIcon(icon_d215f73ba2881c950cecd74ebe3d4266);
+        
+    
+        var popup_610365ed61f68e9ff30512023d1b2595 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fcb89005b466ec0815cbfe2d22ec87ed = $(`<div id="html_fcb89005b466ec0815cbfe2d22ec87ed" style="width: 100.0%; height: 100.0%;">UBS 11 - Frei Pascasio Hettler Rua Osasco, s/nº Bairro - Cidade Nova I, Itu - SP, 13308-093</div>`)[0];
+                popup_610365ed61f68e9ff30512023d1b2595.setContent(html_fcb89005b466ec0815cbfe2d22ec87ed);
+            
+        
+
+        marker_89c7d2a5e9605e1f39016c4c6b97f912.bindPopup(popup_610365ed61f68e9ff30512023d1b2595)
+        ;
+
+        
+    
+    
+            var marker_9cfdb7aa8adf468d5e98b571a02ab0e2 = L.marker(
+                [-23.394705, -47.334307],
+                {}
+            ).addTo(map_f61062b932fe3ddab156adca365ff47c);
+        
+    
+            var icon_9b7ff879dc5463aba8d6100a5a657d40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9cfdb7aa8adf468d5e98b571a02ab0e2.setIcon(icon_9b7ff879dc5463aba8d6100a5a657d40);
+        
+    
+        var popup_fa720b51d51fc30430eff80cdcb7d899 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_746ed41bb38d539aa2a9ec14dbad214e = $(`<div id="html_746ed41bb38d539aa2a9ec14dbad214e" style="width: 100.0%; height: 100.0%;">UBS 12 - Dr. Emílio Chierighini Av. Sol - Jardim Novo Mundo, Itu - SP, 13308-430</div>`)[0];
+                popup_fa720b51d51fc30430eff80cdcb7d899.setContent(html_746ed41bb38d539aa2a9ec14dbad214e);
+            
+        
+
+        marker_9cfdb7aa8adf468d5e98b571a02ab0e2.bindPopup(popup_fa720b51d51fc30430eff80cdcb7d899)
+        ;
+
+        
+    
+    
+            var marker_049d9e11a5b0a954238c4d87f793cac4 = L.marker(
+                [-23.406797, -47.35131],
+                {}
+            ).addTo(map_f61062b932fe3ddab156adca365ff47c);
+        
+    
+            var icon_9d238da35a851dac53e16bb6900229c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_049d9e11a5b0a954238c4d87f793cac4.setIcon(icon_9d238da35a851dac53e16bb6900229c3);
+        
+    
+        var popup_ac49428d48bacea87f612f826b859745 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15d76d31585aba8dbe43047246dfa0e1 = $(`<div id="html_15d76d31585aba8dbe43047246dfa0e1" style="width: 100.0%; height: 100.0%;">UBS 13 R. Geceney Cabreira, 198 - Portal do Éden, Itu - SP, 13308-531</div>`)[0];
+                popup_ac49428d48bacea87f612f826b859745.setContent(html_15d76d31585aba8dbe43047246dfa0e1);
+            
+        
+
+        marker_049d9e11a5b0a954238c4d87f793cac4.bindPopup(popup_ac49428d48bacea87f612f826b859745)
+        ;
+
+        
+    
+    
+            var marker_21497d7386a617b043b786b80fad3acd = L.marker(
+                [-23.280912, -47.269687],
+                {}
+            ).addTo(map_f61062b932fe3ddab156adca365ff47c);
+        
+    
+            var icon_10e4af2349686a9aaae4c6273949f98c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_21497d7386a617b043b786b80fad3acd.setIcon(icon_10e4af2349686a9aaae4c6273949f98c);
+        
+    
+        var popup_33a55ca31f75dedb80f618342e82e2ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a122395ea9be4f0d51f8637b3dc09e7 = $(`<div id="html_8a122395ea9be4f0d51f8637b3dc09e7" style="width: 100.0%; height: 100.0%;">UBS 14 - Santo Campos R. Prof. Alfredo Gomes - Jardim Aeroporto, Itu - SP, 13304-730</div>`)[0];
+                popup_33a55ca31f75dedb80f618342e82e2ac.setContent(html_8a122395ea9be4f0d51f8637b3dc09e7);
+            
+        
+
+        marker_21497d7386a617b043b786b80fad3acd.bindPopup(popup_33a55ca31f75dedb80f618342e82e2ac)
+        ;
+
+        
+    
+    
+            var marker_d0c3d1eef8a285dea6ee166eb2a90bd0 = L.marker(
+                [-23.257753, -47.351413],
+                {}
+            ).addTo(map_f61062b932fe3ddab156adca365ff47c);
+        
+    
+            var icon_a20f5886977a9c4c38610257bf21a55a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d0c3d1eef8a285dea6ee166eb2a90bd0.setIcon(icon_a20f5886977a9c4c38610257bf21a55a);
+        
+    
+        var popup_525bc8734569717ceeea6c8b7637d7d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48064e48086aabc2d12d44eff5c6520f = $(`<div id="html_48064e48086aabc2d12d44eff5c6520f" style="width: 100.0%; height: 100.0%;">UBS 15 - Dr. Hélio Chierighini R. Armênia - Parque Res. Potiguara, Itu - SP, 13312-733</div>`)[0];
+                popup_525bc8734569717ceeea6c8b7637d7d4.setContent(html_48064e48086aabc2d12d44eff5c6520f);
+            
+        
+
+        marker_d0c3d1eef8a285dea6ee166eb2a90bd0.bindPopup(popup_525bc8734569717ceeea6c8b7637d7d4)
+        ;
+
+        
+    
+    
+            var marker_7a16afe4071124ef4bb14a457f0763c4 = L.marker(
+                [-23.29017, -47.312452],
+                {}
+            ).addTo(map_f61062b932fe3ddab156adca365ff47c);
+        
+    
+            var icon_1ac750f16a6c2f424207f43b8a350d93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7a16afe4071124ef4bb14a457f0763c4.setIcon(icon_1ac750f16a6c2f424207f43b8a350d93);
+        
+    
+        var popup_29c0fe64005912f258c066075cdd59d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51c2ccb1474731f817ee4f6f8eeb10d5 = $(`<div id="html_51c2ccb1474731f817ee4f6f8eeb10d5" style="width: 100.0%; height: 100.0%;">UBS 16 - José Roberto da Cruz R. Benedito Ramos da Silva, Bairro - São Camilo, Itu - SP, 13309-815</div>`)[0];
+                popup_29c0fe64005912f258c066075cdd59d7.setContent(html_51c2ccb1474731f817ee4f6f8eeb10d5);
+            
+        
+
+        marker_7a16afe4071124ef4bb14a457f0763c4.bindPopup(popup_29c0fe64005912f258c066075cdd59d7)
+        ;
+
+        
+    
+</script>
+</html>
